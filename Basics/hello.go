@@ -1,11 +1,13 @@
 package main
 
 import (
-	"fmt" //imported for IO opeartions
+	// "fmt" //imported for IO opeartions
+	// "maps"
+	// "slices"
 	// "math"
 )
 
-func main() {
+// func main() {
 	// fmt.Println("Hello world")
 
 	// fmt.Println("go"+"lang");
@@ -133,26 +135,26 @@ func main() {
 	// whatAmI("hey")
 
 	//arrays
-	var a [5]int
-	a[2] = 6
-	// fmt.Println(a);
-	fmt.Println(len(a))
+	// var a [5]int
+	// a[2] = 6
+	// // fmt.Println(a);
+	// fmt.Println(len(a))
 
-	b := [6]int{1, 2, 3, 4, 5, 6}
-	fmt.Println(b)
+	// b := [6]int{1, 2, 3, 4, 5, 6}
+	// fmt.Println(b)
 
-	c := [...]int{1, 2, 3}
-	fmt.Println(c)
+	// c := [...]int{1, 2, 3}
+	// fmt.Println(c)
 
-	d := [...]int{100, 3: 400} //3-index, in between all will be zero
-	fmt.Println(d)
+	// d := [...]int{100, 3: 400} //3-index, in between all will be zero
+	// fmt.Println(d)
 
-	var e [2][3]int
-	for i := 0; i < 2; i++ {
-		for j := 0; j < 3; j++ {
-			e[i][j] = i + j
-		}
-	}
+	// var e [2][3]int
+	// for i := 0; i < 2; i++ {
+	// 	for j := 0; j < 3; j++ {
+	// 		e[i][j] = i + j
+	// 	}
+	// }
 
 	// var f=[2][3]int{
 	//     {1,2,3},
@@ -163,11 +165,89 @@ func main() {
 	//     {4,5,6},
 	// }
 
-	f := [2][3]int{
-		{1, 2, 3},
-		{4, 5, 6},
-	}
+	// f := [2][3]int{
+	// 	{1, 2, 3},
+	// 	{4, 5, 6},
+	// }
 
-	fmt.Println(f)
+	// fmt.Println(f)
 
-}
+	//30 jan
+	//slices
+
+	//empty slice
+	// var s []string;
+	// fmt.Println(s);
+	// fmt.Println(s==nil);
+	// fmt.Println(len(s));
+
+	// s := make([]string, 3)
+	// s[0] = "1"
+	// s[1] = "2"
+	// s[2] = "3"
+	// fmt.Println(s)
+	// fmt.Println(len(s))
+	// fmt.Println(cap(s)) //max capacity of the slice
+	// fmt.Println(s[2]) //max capacity of the slice
+	// fmt.Println(s) //max capacity of the slice
+
+	// s = append(s, "ab")
+	// fmt.Println(len(s))
+	// fmt.Println(s)
+
+	// z := make([]string, 4)
+	// copy(z, s)
+	// fmt.Println(z)
+	// fmt.Println(z[2:4]) //4 index excluded
+	// fmt.Println(z[:2])  //4 index excluded
+	// fmt.Println(z[2:])  //4 index excluded
+
+	// t:=[]string{"a","b"}
+	// l:=[]string{"a","b"}
+	// if slices.Equal(t,l){
+	// 	fmt.Println("Equal")
+	// }
+	// fmt.Println(t)
+
+	// twoD := make([][]int, 3)
+	// for i := 0; i < 3; i++ {
+	//     innerLen := i + 1
+	//     twoD[i] = make([]int, innerLen)
+	//     for j := 0; j < innerLen; j++ {
+	//         twoD[i][j] = i + j
+	//     }
+	// }
+	// fmt.Println("2d: ", twoD)
+
+	//maps
+	// m := make(map[string]int)
+	// m["hi"] = 7
+	// m["hi"] = 8
+	// m["ye"] = 9
+
+	// fmt.Println(m)
+	// fmt.Println(m["hi"])
+	// delete(m,"hi")
+	// clear(m)
+
+	// _, prs := m["hij"]   //prs for finding whether present or not
+
+	// n:=map[string]int{"foo":1,"loo":2}
+	// l:=map[string]int{"foo":1,"loo":3}
+
+	// if maps.Equal(n,l){
+	// 	fmt.Println("equal")
+	// }
+
+	// // fmt.Println(len(m))
+	// fmt.Println(prs)
+	// fmt.Println(n)
+	// fmt.Println(_)
+
+
+
+
+	
+
+
+// }
